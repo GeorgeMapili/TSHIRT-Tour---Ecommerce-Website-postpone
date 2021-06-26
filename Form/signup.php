@@ -154,6 +154,7 @@
 <script>
 	$(document).ready(function(){
 		$('#form2').on("submit",function(e) {
+			e.preventDefault();
 			
 			var username = $('#username').val();
 			var email = $('#email').val();
