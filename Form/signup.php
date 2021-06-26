@@ -79,7 +79,7 @@
 
 	            <div class="form-control">
 	                <!-- <label for="username">Username</label> -->
-	                <input type="email" name="username" class="username" id="username" placeholder="Username">
+	                <input type="text" name="username" class="username" id="username" placeholder="Username">
 	            </div>
 
 	            <div class="form-control">
@@ -152,6 +152,20 @@
 
 </body>
 <script>
-	
+	$(document).ready(function(){
+		$('#form2').on("submit",function(e) {
+			
+			var username = $('#username').val();
+			var email = $('#email').val();
+			var password = $('#password').val();
+			var conf_password = $('#conf_password').val();
+
+			console.log(username);
+			console.log(email);
+			console.log(password);
+			console.log(conf_password);
+			
+		});
+	});
 </script>
 </html>

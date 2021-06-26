@@ -17,7 +17,9 @@ $(document).ready(function () {
         }
       },
       messages: {
-        username: 'Please enter Name.',
+        username: {
+          required: 'Please enter Name.',
+        },
         password: {
           required: 'Please enter Password.',
           minlength: 'Password must be at least 8 characters long.',
